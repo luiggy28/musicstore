@@ -1,32 +1,16 @@
-import { useContext, useState } from "react";
-import { CartContext } from "../../context/CartContext";
-import { db } from "../../firebase/config";
-import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
-import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
-import Boton from "../../components/styles/Global/Boton";
-import Loader from "../Loader/Loader";
+import { useContext, useState } from 'react';
+import { CartContext } from '../context/CartContext';
+import { getFirestore } from '../firebase';
+import { collection, addDoc, doc, getDoc, updateDoc } from 'firebase/firestore';
+import Swal from 'sweetalert2';
 
 const Checkout = () => {
     const { cart, totalCart, clearCart, discount } = useContext(CartContext);
-    const [values, setValues] = useState({
-        nombre: "",
-        apellido: "",
-        direccion: "",
-        email: "",
-    });
-
-    const [orderId, setOrderId] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const [orderId, setOrderId] = useState(null);
+    const db = getFirestore();
 
-    const handleInputChange = (e) => {
-        setValues({
-            ...values,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
 
@@ -38,41 +22,39 @@ const Checkout = () => {
             fecha: new Date(),
         };
 
-        const ordersRef = collection(db, "orders");
+        try {
+            await Promise.all(
+                cart.map(item => {
+                    const docRef = doc(db, 'productos', item.id);
+                    return getDoc(docRef);
+                })
+            ).then(docs => {
+                const updates = docs.map((docSnapshot, index) => {
+                    if (!docSnapshot.exists()) {
+                        throw new Error(`No se encontró el producto con ID: ${cart[index].id}`);
+                    }
 
-        Promise.all(
-            cart.map(item => {
-                const docRef = doc(db, 'productos', item.id);
-                return getDoc(docRef);
-            })
-        ).then(docs => {
-            const updates = docs.map((docSnapshot, index) => {
-                if (!docSnapshot.exists()) {
-                    throw new Error(`No se encontró el producto con ID: ${cart[index].id}`);
-                }
+                    const productData = docSnapshot.data();
+                    if (productData.stock >= cart[index].cantidad) {
+                        const newStock = productData.stock - cart[index].cantidad;
+                        return updateDoc(doc(db, 'productos', cart[index].id), { stock: newStock });
+                    } else {
+                        throw new Error(`No hay suficiente stock de ${productData.nombre}`);
+                    }
+                });
 
-                const productData = docSnapshot.data();
-                if (productData.stock >= cart[index].cantidad) {
-                    const newStock = productData.stock - cart[index].cantidad;
-                    return updateDoc(doc(db, 'productos', cart[index].id), { stock: newStock });
-                } else {
-                    throw new Error(`No hay suficiente stock de ${productData.nombre}`);
-                }
+                return Promise.all(updates);
             });
 
-            return Promise.all(updates).then(() => addDoc(ordersRef, orden));
-        })
-        .then((docRef) => {
+            const docRef = await addDoc(collection(db, "orders"), orden);
             setOrderId(docRef.id);
             clearCart();
             Swal.fire("Gracias por tu compra!");
-        })
-        .catch((error) => {
+        } catch (error) {
             console.error("Error al procesar la compra:", error);
-        })
-        .finally(() => {
+        } finally {
             setIsLoading(false);
-        });
+        }
     };
 
     if (isLoading) {
