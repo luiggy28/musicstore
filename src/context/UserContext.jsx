@@ -19,11 +19,11 @@ export const UserProvider = ({children}) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
     }
 
-    const handleRegister = (values) => {
+    const register = async (values) => {
         if (!values.email || !values.password) {
             Swal('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
         } else {
-            register(values);
+            await createUserWithEmailAndPassword(auth, values.email, values.password);
         }
     }
 
