@@ -61,6 +61,7 @@ return (
             className="bg-blue-500 text-white p-2 mt-4">
             Restablecer contraseña
         </button>
+        <br />
         <button
         onClick={() => register(values)}
         className="bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4">
