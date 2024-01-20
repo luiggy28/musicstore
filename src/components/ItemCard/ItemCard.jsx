@@ -26,7 +26,11 @@ const ItemCard = ({item}) => {
                 ? 'Ver menos'
                 : 'Ver más...'}
             </a>
-            { item.stock <= 8 && <p className="font-bold text-red-500">¡Últimas {item.stock} unidades!</p> }
+            {
+                item.stock === 0
+                    ? <p className="font-bold text-red-500">Producto agotado</p>
+                    : item.stock <= 8 && <p className="font-bold text-red-500">¡Últimas {item.stock} unidades!</p> 
+            }
 
             <p className="text-xl font-bold">Precio: {item.price.toLocaleString('es-CL',
             { style: 'currency', currency: 'CLP' })} clp
