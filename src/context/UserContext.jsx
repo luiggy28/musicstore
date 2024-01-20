@@ -43,6 +43,15 @@ export const UserProvider = ({children}) => {
         }
     }
 
+    const resetPassword = async (email) => {
+        try {
+            await sendPasswordResetEmail(auth, email);
+            Swal.fire('Éxito', 'Se ha enviado un correo electrónico de restablecimiento de contraseña. Por favor, revisa tu bandeja de entrada.', 'success');
+        } catch (error) {
+            Swal.fire('Error', 'Ha ocurrido un error al intentar restablecer la contraseña.', 'error');
+        }
+    }
+
     const logout = () => {
         signOut(auth)
     }
