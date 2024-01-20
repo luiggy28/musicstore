@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config";
-import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc, getDoc, getFirestore } from "firebase/firestore";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import Boton from "../../components/styles/Global/Boton";
