@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { auth, provider } from "../firebase/config";
 import { signInWithPopup, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import Swal from "sweetalert2";
 
 
 export const UserContext = createContext()
@@ -20,7 +21,7 @@ export const UserProvider = ({children}) => {
 
     const handleRegister = (values) => {
         if (!values.email || !values.password) {
-            swal('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
+            Swal('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
         } else {
             register(values);
         }
