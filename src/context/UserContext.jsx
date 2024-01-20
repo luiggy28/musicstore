@@ -31,7 +31,15 @@ export const UserProvider = ({children}) => {
         if (!values.email || !values.password) {
             Swal.fire('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
         } else {
-            await createUserWithEmailAndPassword(auth, values.email, values.password);
+            try {
+                await createUserWithEmailAndPassword(auth, values.email, values.password);
+            } catch (error) {
+                if (error.code === 'auth/email-already-in-use') {
+                    Swal.fire('Error', 'Este correo electrónico ya está en uso. Por favor, intenta iniciar sesión.', 'error');
+                } else {
+                    Swal.fire('Error', error.message, 'error');
+                }
+            }
         }
     }
 
