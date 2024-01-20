@@ -1,8 +1,11 @@
-import { useContext, useState } from 'react';
-import { CartContext } from '../../context/CartContext';
-import { getFirestore } from '../firebase';
-import { collection, addDoc, doc, getDoc, updateDoc } from 'firebase/firestore';
-import Swal from 'sweetalert2';
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
+import { db } from "../../firebase/config";
+import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
+import Boton from "../../components/styles/Global/Boton";
+import Loader from "../Loader/Loader";
 
 const Checkout = () => {
     const { cart, totalCart, clearCart, discount } = useContext(CartContext);
