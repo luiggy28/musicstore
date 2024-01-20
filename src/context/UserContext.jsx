@@ -18,11 +18,12 @@ export const UserProvider = ({children}) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
     }
 
-    const register = (values) => {
+    const handleRegister = (values) => {
         if (!values.email || !values.password) {
-            throw new Error('Por favor ingresa un correo y/o contraseña válidos');
+            swal('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
+        } else {
+            register(values);
         }
-        createUserWithEmailAndPassword(auth, values.email, values.password)
     }
 
     const logout = () => {
