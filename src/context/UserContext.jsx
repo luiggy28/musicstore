@@ -21,7 +21,7 @@ export const UserProvider = ({children}) => {
 
     const register = async (values) => {
         if (!values.email || !values.password) {
-            Swal('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
+            Swal.fire('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
         } else {
             await createUserWithEmailAndPassword(auth, values.email, values.password);
         }

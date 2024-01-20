@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import "./LoginScreen.scss";
 import { UserContext } from "../../context/UserContext";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import Swal from "sweetalert2";
 
 const LoginScreen = () => {
 const { login, register, googleLogin } = useContext(UserContext);
@@ -49,20 +51,20 @@ return (
             name="password"
         />
 
-        <button type="submit" className="bg-blue-500 text-white py-2">
+        <button type="submit" className="bg-indigo-600 hover:bg-indigo-800 text-white py-2">
             Ingresar
         </button>
         </form>
 
         <button
         onClick={() => register(values)}
-        className="bg-blue-500 text-white p-2 mt-4">
+        className="bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4">
             Registrar
         </button>
             <br/>
         <button
         onClick={googleLogin}
-        className="bg-blue-500 text-white p-2 mt-4">
+        className="bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4">
             Iniciar sesión con Google
         </button>
     </div>
