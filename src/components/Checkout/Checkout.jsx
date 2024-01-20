@@ -9,9 +9,22 @@ import Loader from "../Loader/Loader";
 
 const Checkout = () => {
     const { cart, totalCart, clearCart, discount } = useContext(CartContext);
+    const [values, setValues] = useState({
+        nombre: "",
+        apellido: "",
+        direccion: "",
+        email: "",
+    });
     const [isLoading, setIsLoading] = useState(false);
     const [orderId, setOrderId] = useState(null);
     const db = getFirestore();
+
+    const handleInputChange = (e) => {
+        setValues({
+            ...values,
+            [e.target.name]: e.target.value,
+        });
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
