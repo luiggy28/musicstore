@@ -27,9 +27,9 @@ const handleSubmit = (e) => {
 
 return (
     <div className="login-container">
-    <div className="p-8 rounded bg-white">
+    <div className="p-8 rounded-xl bg-gray-100 shadow-2xl ">
         <h2 className="text-2xl font-semibold w-80">
-            Login
+            Inicio de sesión
         </h2>
         <hr />
 
@@ -51,28 +51,30 @@ return (
             name="password"
         />
 
-        <button type="submit" className="bg-indigo-600 hover:bg-indigo-800 text-white py-2">
+        <button type="submit" className=" rounded bg-indigo-600 hover:bg-indigo-800 text-white py-2 shadow-sm ">
             Ingresar
         </button>
         </form>
 
-        <button
-            onClick={() => resetPassword(values.email)}
-            className="bg-blue-500 text-white p-2 mt-4">
-            Restablecer contraseña
-        </button>
-        <br />
-        <button
-        onClick={() => register(values)}
-        className="bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4">
-            Registrar
-        </button>
-            <br/>
-        <button
-        onClick={googleLogin}
-        className="bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4">
-            Iniciar sesión con Google
-        </button>
+        <div className=" flex justify-between ">
+            <button
+            onClick={() => register(values)}
+            className=" rounded bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4 shadow-sm ">
+                Registrarme
+            </button>
+            <button
+                onClick={() => resetPassword(values.email)}
+                className=" rounded bg-red-300 hover:bg-red-500 text-white p-2 mt-4 shadow-sm ">
+                Restablecer contraseña
+            </button>
+        </div>
+        <div className=" flex flex-col ">
+            <button
+            onClick={googleLogin}
+            className=" rounded bg-indigo-600 hover:bg-indigo-800 text-white p-2 mt-4 shadow-sm ">
+                Iniciar sesión con Google
+            </button>
+        </div>
     </div>
     </div>
 );
