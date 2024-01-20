@@ -35,7 +35,8 @@ const Checkout = () => {
         const orden = {
             cliente: values,
             items: cart,
-            total: totalCart(),
+            total: totalCart() - discount,
+            discount: discount,
             fecha: new Date(),
         };
 
