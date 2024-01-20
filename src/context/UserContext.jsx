@@ -19,6 +19,9 @@ export const UserProvider = ({children}) => {
     }
 
     const register = (values) => {
+        if (!values.email || !values.password) {
+            throw new Error('Por favor ingresa un correo y/o contraseña válidos');
+        }
         createUserWithEmailAndPassword(auth, values.email, values.password)
     }
 
