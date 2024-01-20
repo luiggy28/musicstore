@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../firebase/config";
-import { collection, addDoc, setDoc, doc, updateDoc, getDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc, getDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import Boton from "../../components/styles/Global/Boton";
@@ -9,7 +9,6 @@ import Loader from "../Loader/Loader";
 
 const Checkout = () => {
     const { cart, totalCart, clearCart, discount } = useContext(CartContext);
-
     const [values, setValues] = useState({
         nombre: "",
         apellido: "",
@@ -29,14 +28,13 @@ const Checkout = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         setIsLoading(true);
 
         const orden = {
             cliente: values,
             items: cart,
-            total: totalCart() - discount,
-            discount: discount,
+            total: totalCart() - (discount || 0),
+            discount: discount || 0,
             fecha: new Date(),
         };
 
@@ -62,21 +60,18 @@ const Checkout = () => {
                 }
             });
 
-            Promise.all(updates)
-                .then(() => {
-                    return addDoc(ordersRef, orden);
-                })
-                .then((docRef) => {
-                    setOrderId(docRef.id);
-                    clearCart();
-                    Swal.fire("Gracias por tu compra!");
-                })
-                .catch((error) => {
-                    console.error("Error al procesar la compra:", error);
-                })
-                .finally(() => {
-                    setIsLoading(false);
-                });
+            return Promise.all(updates).then(() => addDoc(ordersRef, orden));
+        })
+        .then((docRef) => {
+            setOrderId(docRef.id);
+            clearCart();
+            Swal.fire("Gracias por tu compra!");
+        })
+        .catch((error) => {
+            console.error("Error al procesar la compra:", error);
+        })
+        .finally(() => {
+            setIsLoading(false);
         });
     };
 
@@ -93,7 +88,6 @@ const Checkout = () => {
                     <p className="m-4">Tu código de orden es: {orderId}</p>
                     <hr />
                     <Boton><Link to="/">Ir al Inicio</Link></Boton>
-
                 </div>
             </div>
         );
