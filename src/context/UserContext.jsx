@@ -16,7 +16,11 @@ export const UserProvider = ({children}) => {
     console.log(user)
 
     const login = (values) => {
-        signInWithEmailAndPassword(auth, values.email, values.password)
+        if (!values.email || !values.password) {
+            Swal.fire('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
+        } else {
+            signInWithEmailAndPassword(auth, values.email, values.password)
+        }
     }
 
     const register = async (values) => {
