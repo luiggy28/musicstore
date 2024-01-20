@@ -15,11 +15,15 @@ export const UserProvider = ({children}) => {
 
     console.log(user)
 
-    const login = (values) => {
+    const login = async (values) => {
         if (!values.email || !values.password) {
             Swal.fire('Error', 'Por favor ingresa un correo y/o contraseña válidos', 'error');
         } else {
-            signInWithEmailAndPassword(auth, values.email, values.password)
+            try {
+                await signInWithEmailAndPassword(auth, values.email, values.password);
+            } catch (error) {
+                Swal.fire('Error', 'Correo electrónico o contraseña incorrectos', 'error');
+            }
         }
     }
 
