@@ -8,7 +8,7 @@ import Boton from "../../components/styles/Global/Boton";
 import Loader from "../Loader/Loader";
 
 const Checkout = () => {
-    const { cart, totalCart, clearCart } = useContext(CartContext);
+    const { cart, totalCart, clearCart, discount } = useContext(CartContext);
 
     const [values, setValues] = useState({
         nombre: "",
