@@ -1,0 +1,542 @@
+[
+    {
+        "id": 1,
+        "name": "Micrófono AKG C414",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1200,
+        "stock": 6,
+        "category": "microfono",
+        "description": "Un micrófono de condensador legendario, conocido por su versatilidad y cinco patrones polares seleccionables. Ideal para grabaciones de estudio detalladas, voces, y una amplia gama de instrumentos."
+    },
+    {
+        "id": 2,
+        "name": "Micrófono Shure SM7B",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 800,
+        "stock": 5,
+        "category": "microfono",
+        "description": "Este micrófono dinámico es famoso por su uso en grabaciones vocales de radio y podcasting. Ofrece un sonido cálido y suave con excelente aislamiento de ruidos de fondo."
+    },
+    {
+        "id": 3,
+        "name": "Micrófono Rode NT1-A",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 980,
+        "stock": 10,
+        "category": "microfono",
+        "description": "Un micrófono de condensador con una de las menores cifras de ruido autoimpuesto en su clase. Es popular para grabaciones de voz en casa y estudio por su sonido claro y cálido."
+    },
+    {
+        "id": 4,
+        "name": "Micrófono Neumann U 87",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1780,
+        "stock": 4,
+        "category": "microfono",
+        "description": "Este clásico de estudio ofrece un sonido cálido y bien balanceado. Es altamente versátil y utilizado por profesionales para grabaciones de voces, instrumentos y más."
+    },
+    {
+        "id": 5,
+        "name": "Micrófono Blue Yeti USB",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 680,
+        "stock": 10,
+        "category": "microfono",
+        "description": "Un micrófono USB multipatrón muy popular entre streamers y podcasters. Ofrece una excelente calidad de sonido y es muy fácil de usar para grabaciones en casa."
+    },
+    {
+        "id": 6,
+        "name": "Micrófono Sennheiser MD 421",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 795,
+        "stock": 4,
+        "category": "microfono",
+        "description": "Conocido por su robustez y versatilidad, este micrófono dinámico es excelente para grabar guitarras, baterías y voces, tanto en estudio como en vivo."
+    },
+    {
+        "id": 7,
+        "name": "Micrófono Electro-Voice RE20",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1350,
+        "stock": 10,
+        "category": "microfono",
+        "description": "Un micrófono dinámico ideal para aplicaciones de broadcast y grabación. Ofrece un sonido consistente y controlado, muy usado para voces habladas y radio."
+    },
+    {
+        "id": 8,
+        "name": "Micrófono Audio-Technica AT2020",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 250,
+        "stock": 3,
+        "category": "microfono",
+        "description": "Un micrófono de condensador de diafragma grande, ideal para proyectos y estudios caseros. Ofrece un sonido detallado y es adecuado para una variedad de aplicaciones."
+    },
+    {
+        "id": 9,
+        "name": "Micrófono Royer R-121 Ribbon",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 560,
+        "stock": 10,
+        "category": "microfono",
+        "description": "Este micrófono de cinta es famoso por su sonido natural y su capacidad para manejar altos SPLs. Es excelente para capturar la esencia de instrumentos como guitarras y metales."
+    },
+    {
+        "id": 10,
+        "name": "Micrófono Behringer C-1",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 560,
+        "stock": 2,
+        "category": "microfono",
+        "description": "Un micrófono de condensador de estudio asequible y de alta calidad. Ideal para capturar voces e instrumentos con claridad y detalle."
+    },
+    {
+        "id": 11,
+        "name": "Escritorio para Estudio de Grabación",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 3500,
+        "stock": 10,
+        "category": "estudio",
+        "description": "Un escritorio espacioso y ergonómico diseñado específicamente para estudios de grabación. Ofrece espacio suficiente para monitores, interfaces de audio, y otros equipos esenciales.Un micrófono de condensador de estudio aquible y de alta calidad. Ideal para capturar voces e instrumentos con claridad y detalle."
+    },
+    {
+        "id": 12,
+        "name": "Paneles Acústicos de Espuma",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 80,
+        "stock": 3,
+        "category": "estudio",
+        "description": "Paneles de espuma acústica que mejoran la calidad del sonido absorbiendo las ondas sonoras no deseadas. Son ideales para optimizar la acústica de las salas de grabación y mezcla."
+    },
+    {
+        "id": 13,
+        "name": "Tarjeta de Sonido Externa Antelope ZenGo",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 550,
+        "stock": 10,
+        "category": "estudio",
+        "description": "Una interfaz de audio externa de alta calidad es crucial para lograr grabaciones claras y profesionales. Ofrece preamplificadores de micrófono, conversión de alta resolución y conectividad con diversas fuentes de audio."
+    },
+    {
+        "id": 14,
+        "name": "Atril para Partituras",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 60,
+        "stock": 4,
+        "category": "estudio",
+        "description": "Un atril resistente y ajustable es esencial para sostener partituras o libretos durante las sesiones de grabación, especialmente útil para vocalistas e instrumentistas."
+    },
+    {
+        "id": 15,
+        "name": "Soporte para Micrófono",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 45,
+        "stock": 10,
+        "category": "estudio",
+        "description": "Un soporte robusto y ajustable para sostener micrófonos, imprescindible para cualquier configuración de grabación. Los modelos con brazo articulado ofrecen mayor flexibilidad."
+    },
+    {
+        "id": 16,
+        "name": "Auriculares de Estudio",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 156,
+        "stock": 5,
+        "category": "estudio",
+        "description": "Auriculares de alta calidad diseñados para la monitorización precisa durante la grabación y mezcla. Ofrecen un sonido detallado y una representación fidedigna de la mezcla."
+    },
+    {
+        "id": 17,
+        "name": "Monitores de Estudio (El Par)",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 980,
+        "stock": 10,
+        "category": "estudio",
+        "description": "Altavoces activos diseñados para proporcionar una representación precisa del sonido en un estudio. Son esenciales para la mezcla y masterización de pistas."
+    },
+    {
+        "id": 18,
+        "name": "Controlador MIDI",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 255,
+        "stock": 6,
+        "category": "estudio",
+        "description": "Un teclado o dispositivo controlador MIDI es fundamental para la composición y producción musical, permitiendo una interacción táctil con instrumentos virtuales y software de música."
+    },
+    {
+        "id": 19,
+        "name": "Tratamiento de Bajo Acústico (Bass Traps)",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 128,
+        "stock": 7,
+        "category": "estudio",
+        "description": "Paneles o esquinas diseñadas para absorber frecuencias bajas y reducir la reverberación. Mejoran significativamente la claridad del sonido en el estudio"
+    },
+    {
+        "id": 20,
+        "name": "Soporte para Teclado Musical",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 85,
+        "stock": 10,
+        "category": "estudio",
+        "description": "Un soporte resistente y ajustable para sostener teclados o sintetizadores. Fundamental para estudios que incorporan instrumentos electrónicos en su configuración."
+    },
+    {
+        "id": 21,
+        "name": "Batería Acústica Yamaha Stage Custom",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1200,
+        "stock": 8,
+        "category": "percusion",
+        "description": "Una batería versátil y de alta calidad, perfecta para una amplia gama de estilos musicales. Incluye bombo, tambores, y platillos de gran resonancia."
+    },
+    {
+        "id": 22,
+        "name": "Congas LP Matador",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 980,
+        "stock": 10,
+        "category": "percusion",
+        "description": "Este conjunto de congas ofrece un sonido rico y profundo, ideal para música latina, jazz, y fusión. Fabricadas con madera de alta calidad y parches de piel natural."
+    },
+    {
+        "id": 23,
+        "name": "Timbales Pearl Primero",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1300,
+        "stock": 9,
+        "category": "percusion",
+        "description": "Un set de timbales con cascos de acero que proporcionan un sonido brillante y cortante, esenciales para ritmos latinos como la salsa y el mambo."
+    },
+    {
+        "id": 24,
+        "name": "Bongó Meinl Journey Series",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 460,
+        "stock": 10,
+        "category": "percusion",
+        "description": "Estos bongós combinan cascos de fibra de vidrio con parches de piel natural, ofreciendo durabilidad y un sonido cálido, adecuado para géneros afrocubanos y folk."
+    },
+    {
+        "id": 25,
+        "name": "Maracas LP Pro",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 80,
+        "stock": 8,
+        "category": "percusion",
+        "description": "Maracas tradicionales hechas a mano, proporcionan un sonido claro y distintivo, indispensables en conjuntos de música latina y en educación musical."
+    },
+    {
+        "id": 26,
+        "name": "Cajón Flamenco Meinl",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 290,
+        "stock": 10,
+        "category": "percusion",
+        "description": "Un cajón robusto y versátil, con una superficie de golpeo sensible y un sistema de cuerdas ajustables para un amplio rango de sonidos y efectos."
+    },
+    {
+        "id": 27,
+        "name": "Djembe Africano",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 325,
+        "stock": 7,
+        "category": "percusion",
+        "description": "Tallado a mano en madera y equipado con un parche de piel de cabra, este djembe produce sonidos graves profundos y agudos nítidos, esencial en la música africana y de percusión mundial."
+    },
+    {
+        "id": 28,
+        "name": "Xilófono Yamaha",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 640,
+        "stock": 10,
+        "category": "percusion",
+        "description": "Un instrumento melódico de percusión, con barras de madera afinadas, perfecto para la enseñanza musical y la interpretación orquestal."
+    },
+    {
+        "id": 29,
+        "name": "Vibráfono Musser Pro",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 325,
+        "stock": 6,
+        "category": "percusion",
+        "description": "Un vibráfono de alto rendimiento con barras de aluminio y un motor de vibrato ajustable, ofrece un tono rico y resonante, utilizado en jazz y música clásica."
+    },
+    {
+        "id": 30,
+        "name": "Tambor de Mano Remo Frame Drum",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 325,
+        "stock": 10,
+        "category": "percusion",
+        "description": "Este tambor de marco ligero y portátil es ideal para círculos de percusión y terapia musical, ofreciendo un tono cálido y una excelente respuesta."
+    },
+    {
+        "id": 31,
+        "name": "Guitarra Eléctrica Fender Stratocaster",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1600,
+        "stock": 9,
+        "category": "cuerdas",
+        "description": "Un ícono de la música moderna, conocida por su versatilidad sonora y su comodidad al tocar. Perfecta para géneros como rock, blues y jazz."
+    },
+    {
+        "id": 32,
+        "name": "Guitarra Acústica Martin D-28",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 950,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Este modelo es un estándar en guitarras acústicas, ofreciendo un tono rico y profundo. Ideal para músicos folk, country y singer-songwriters."
+    },
+    {
+        "id": 33,
+        "name": "Ukelele Soprano Kala",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 180,
+        "stock": 18,
+        "category": "cuerdas",
+        "description": "Un ukelele de tamaño soprano, perfecto para principiantes y músicos viajeros. Ofrece un sonido alegre y es ideal para acompañamiento rítmico y solos melódicos."
+    },
+    {
+        "id": 34,
+        "name": "Violín Stradivarius Réplica",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 695,
+        "stock": 4,
+        "category": "cuerdas",
+        "description": "Una réplica de alta calidad de los famosos violines Stradivarius, conocidos por su tono excepcional y calidad artesanal. Adecuado para músicos clásicos avanzados y profesionales."
+    },
+    {
+        "id": 35,
+        "name": "Cello Yamaha VC5S",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1100,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Un cello de estudio que ofrece un sonido cálido y expresivo. Construido con maderas de calidad y perfecto para estudiantes avanzados y músicos de orquesta."
+    },
+    {
+        "id": 36,
+        "name": "Contrabajo Acústico Palatino VB-004",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1345,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Este contrabajo proporciona un sonido profundo y resonante, ideal para jazz, orquesta y géneros folclóricos. Su diseño robusto lo hace adecuado para estudiantes y profesionales."
+    },
+    {
+        "id": 37,
+        "name": "Mandolina Gibson F-5",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 430,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Con su distintiva forma y sonido brillante, esta mandolina es ideal para bluegrass y música folk. Ofrece una excelente proyección y claridad tonal."
+    },
+    {
+        "id": 38,
+        "name": "Banjo Deering Goodtime",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 780,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Un banjo ligero y fácil de tocar, perfecto para géneros como el folk, country y bluegrass. Ofrece un sonido claro y una gran jugabilidad."
+    },
+    {
+        "id": 39,
+        "name": "Guitarra Clásica Yamaha C40",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 399,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Una opción ideal para estudiantes, esta guitarra clásica ofrece un tono cálido y equilibrado. Es cómoda de tocar y adecuada para una variedad de estilos musicales."
+    },
+    {
+        "id": 40,
+        "name": "Arpa Lyon & Healy Ogden",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1354,
+        "stock": 10,
+        "category": "cuerdas",
+        "description": "Una arpa de pedal de tamaño mediano, conocida por su sonido rico y su bella artesanía. Ideal para estudiantes avanzados y músicos de cámara."
+    },
+    {
+        "id": 41,
+        "name": "Piano de Cola Steinway & Sons Model B",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 90000,
+        "stock": 5,
+        "category": "teclados",
+        "description": "Un piano de cola clásico, conocido por su sonido excepcional y tacto inigualable. Ideal para conciertos y músicos profesionales."
+    },
+    {
+        "id": 42,
+        "name": "Teclado Yamaha PSR-E363",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 200,
+        "stock": 15,
+        "category": "teclados",
+        "description": "Teclado versátil con una gran variedad de sonidos y funciones. Perfecto para principiantes y músicos en desarrollo."
+    },
+    {
+        "id": 43,
+        "name": "Teclado Controlador MIDI Akai MPK Mini",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 99,
+        "stock": 20,
+        "category": "teclados",
+        "description": "Un controlador USB compacto y portátil, ideal para producción musical en movimiento con pads estilo MPC y teclas sensibles a la velocidad."
+    },
+    {
+        "id": 44,
+        "name": "Piano Digital Casio Privia PX-160",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 500,
+        "stock": 10,
+        "category": "teclados",
+        "description": "Un piano digital elegante con teclas ponderadas que emulan la sensación de un piano acústico, perfecto para estudiantes y aficionados."
+    },
+    {
+        "id": 45,
+        "name": "Teclado Roland GO:KEYS",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 300,
+        "stock": 12,
+        "category": "teclados",
+        "description": "Teclado creativo para músicos en desarrollo, ofrece funciones intuitivas para la composición musical y aprendizaje interactivo."
+    },
+    {
+        "id": 46,
+        "name": "Piano de Escenario Nord Stage 3",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 3500,
+        "stock": 7,
+        "category": "teclados",
+        "description": "Un piano de escenario premium con una amplia gama de sonidos de sintetizador y órgano. Preferido por músicos profesionales por su versatilidad y calidad de sonido."
+    },
+    {
+        "id": 47,
+        "name": "Teclado Controlador MIDI Arturia KeyLab 49",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 400,
+        "stock": 10,
+        "category": "teclados",
+        "description": "Controlador MIDI de 49 teclas con integración de software, controles táctiles y una construcción robusta para una experiencia de producción musical avanzada."
+    },
+    {
+        "id": 48,
+        "name": "Piano Vertical Yamaha U1",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 8000,
+        "stock": 4,
+        "category": "teclados",
+        "description": "Un piano vertical clásico que ofrece un sonido rico y una acción de tecla consistente. Ideal para escuelas de música, estudios y hogares."
+    },
+    {
+        "id": 49,
+        "name": "Teclado Korg Pa700",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1500,
+        "stock": 6,
+        "category": "teclados",
+        "description": "Teclado arreglista profesional con una amplia gama de sonidos y estilos, pantalla táctil y potentes funciones de secuenciación y composición."
+    },
+    {
+        "id": 50,
+        "name": "Controlador MIDI Novation Launchkey 61 MK3",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 250,
+        "stock": 8,
+        "category": "teclados",
+        "description": "Un controlador MIDI ideal para Ableton Live, con 61 teclas, pads sensibles, controles de mezcla y una integración de software profunda."
+    },
+    {
+        "id": 51,
+        "name": "Trompeta Yamaha YTR-2330",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1200,
+        "stock": 10,
+        "category": "vientos",
+        "description": "Una trompeta ideal para estudiantes, conocida por su facilidad de interpretación y su tono consistente. Perfecta para músicos en desarrollo."
+    },
+    {
+        "id": 52,
+        "name": "Trombón Bach Stradivarius 42",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 3200,
+        "stock": 5,
+        "category": "vientos",
+        "description": "Un trombón de alta calidad para músicos profesionales, ofrece un tono rico y una respuesta rápida. Ideal para jazz y música clásica."
+    },
+    {
+        "id": 53,
+        "name": "Flauta Transversal Yamaha YFL-222",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 600,
+        "stock": 8,
+        "category": "vientos",
+        "description": "Flauta transversal diseñada para estudiantes, con un diseño ergonómico y una respuesta uniforme. Ofrece un tono cálido y es fácil de tocar."
+    },
+    {
+        "id": 54,
+        "name": "Saxofón Alto Selmer SAS280 La Voix II",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 2300,
+        "stock": 7,
+        "category": "vientos",
+        "description": "Saxofón alto de calidad profesional con un tono cálido y una construcción robusta. Perfecto para jazz, banda y solistas."
+    },
+    {
+        "id": 55,
+        "name": "Oboe Yamaha YOB-241",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 2500,
+        "stock": 4,
+        "category": "vientos",
+        "description": "Un oboe de iniciación resistente, con una mecánica fiable y un tono claro y centrado. Ideal para estudiantes y bandas escolares."
+    },
+    {
+        "id": 56,
+        "name": "Tuba Yamaha YBB-201",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 6000,
+        "stock": 3,
+        "category": "vientos",
+        "description": "Una tuba de 4/4 de tamaño estándar con un sonido profundo y resonante. Construcción duradera y adecuada para bandas y orquestas."
+    },
+    {
+        "id": 57,
+        "name": "Clarinete Buffet Crampon E11",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 1200,
+        "stock": 6,
+        "category": "vientos",
+        "description": "Clarinete de madera para estudiantes avanzados, conocido por su tono cálido y mecánica precisa. Excelente para orquesta y solistas."
+    },
+    {
+        "id": 58,
+        "name": "Saxofón Tenor Yamaha YTS-480",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 2800,
+        "stock": 5,
+        "category": "vientos",
+        "description": "Saxofón tenor intermedio que combina calidad profesional y precio asequible. Ofrece un sonido rico y una ergonomía mejorada."
+    },
+    {
+        "id": 59,
+        "name": "Fliscorno Yamaha YFH-631G",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 2200,
+        "stock": 4,
+        "category": "vientos",
+        "description": "Un fliscorno con un tono cálido y suave, ideal para jazz y música de cámara. Construcción de alta calidad y excelente respuesta."
+    },
+    {
+        "id": 60,
+        "name": "Fagot Yamaha YFG-821",
+        "img": "https://dummyimage.com/250x250/000/fff",
+        "price": 7500,
+        "stock": 6,
+        "category": "vientos",
+        "description": "Un fagot profesional con un tono rico y profundo. Diseñado para un rendimiento óptimo, es preferido por solistas y músicos de orquesta."
+    }
+]

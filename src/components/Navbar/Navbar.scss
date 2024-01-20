@@ -1,0 +1,51 @@
+@import '../styles/Global/Variables.scss';
+
+.header {
+	background-color: $color_2;
+
+}
+
+.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.header__title {
+	color: $color_1;
+	font-size: 40px;
+
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+	
+}
+
+.navbar__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.navbar__logo {
+	width: 300px;
+}
+
+.navbar__list {
+	width: 28px;
+}
+
+.navbar__cart {
+	width: 28px;
+}
